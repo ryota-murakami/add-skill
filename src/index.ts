@@ -150,7 +150,7 @@ async function main(source: string, options: Options) {
 
       if (installedAgents.length === 0) {
         if (options.yes) {
-          targetAgents = ['opencode', 'claude-code', 'codex', 'cursor', 'antigravity'];
+          targetAgents = ['opencode', 'claude-code', 'codex', 'cursor', 'antigravity', 'github-copilot'];
           p.log.info('Installing to all agents (none detected)');
         } else {
           p.log.warn('No coding agents detected. You can still install skills.');
